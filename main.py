@@ -23,11 +23,9 @@ def nth_number(n):
 
 def till_number(n):
     a, b = 0, 1
-
-    while a <= n:
+    while a < n:
         print(a)
-        a = b
-        b += a
+        a, b = b, a+b
 
 
 while selection != 'q':
